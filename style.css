@@ -1,0 +1,293 @@
+body {
+    background: linear-gradient(to bottom, #c2a083, #ffffff);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-template-columns: 1fr 2fr 1fr 2fr 2fr 2fr;
+    grid-template-rows: min-content auto auto min-content;
+    grid-template-areas:
+        ". nav nav nav ."
+        ". header header header ."
+        ". lokal lokal lokal ."
+        ". content1 content1 content1 ."
+        ". content2 content2 content2 ."
+        ". content3 content3 content3 .";
+}
+
+
+#header-index {
+    background-image: url(header.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 550px;
+}
+
+#header-stockholm {
+    background-image: url(headersthml.png);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    display: grid;
+    grid-area: header;
+}
+#header-goteborg {
+    background-image: url(headergbg.png);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    display: grid;
+    grid-area: header;
+}
+
+#header-malmo {
+    background-image: url(headermalmo.png);
+    background-size: cover;
+    background-position: center;
+    height: 550px;
+    display: grid;
+    grid-area: header;
+}
+
+/*content1*/
+.content1 {
+    display: grid;
+
+  }
+
+  .content1 img {
+    grid-column: 1; 
+  }
+
+  .content1 p {
+    grid-column: 2;
+    margin-left: 30px;
+    margin-right: 30px;
+    font-size: 20px;
+  }
+/*content2*/
+.content2 {
+    display: grid;
+  }
+  
+  .content2 img {
+    grid-column: 1; 
+  }
+
+  .content2 p {
+    grid-column: 2;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+/*content3*/
+.content3 {
+    display: grid;
+  }
+  
+  .content3 img {
+    grid-column: 1; 
+  }
+
+  .content3 p {
+    grid-column: 2;
+    margin-left: 20px;
+    font-size: 20px;
+  }
+
+  nav {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 999;
+    background-color: transparent;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
+  }
+  
+  nav li {
+    margin-right: 10px;
+  }
+  
+  nav a {
+    color: #333333;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 3px 6px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    background-color: transparent;
+  }
+  
+  nav a:hover {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+
+.lokalnavigering {
+    display: flex;
+    justify-content: center;
+    background-color: #f2f2f2;
+    padding: 10px 0;
+  }
+  
+  .lokalnavigering ul {
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+  }
+  
+  .lokalnavigering li {
+    margin: 0 10px;
+  }
+  
+  .lokalnavigering a {
+    color: #333;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 5px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+  }
+  
+  .lokalnavigering a:hover {
+    background-color: #c2a083;
+    color: #ffffff;
+  }
+
+/*Ska inte vara med i grid*/
+.destination-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.destination {
+    width: 300px;
+    background-color: #ffffff;
+    margin: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+.destination img {
+    width: 300px;
+    height: 400px;
+}
+
+.product h3 {
+    margin-top: 10px;
+}
+
+.destination p {
+    margin-top: 5px;
+}
+
+#kontakt {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+#booking {
+    display: inline-block;
+    text-align: left;
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 5px;
+  }
+  
+  .bokning {
+    margin-bottom: 20px;
+  }
+  
+  .bokning legend {
+    font-weight: bold;
+  }
+  
+  .bokning label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .bokning input[type="radio"],
+  .bokning input[type="date"],
+  .bokning select,
+  .bokning input[type="text"],
+  .bokning textarea {
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #cccccc;
+    border-radius: 3px;
+  }
+  
+  #greeting textarea {
+    width: 100%;
+  }
+  
+  #boka {
+    background-color: #333333;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  #boka:hover {
+    background-color: #555555;
+  }
+
+#omoss {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  #omoss h2, #omoss h3 {
+    margin-bottom: 10px;
+  }
+  
+  #omoss p {
+    margin-bottom: 20px;
+  }
+
+.priser {
+    width: 300px;
+    background-color: #ffffff;
+    margin: 50px;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .priser img {
+    width: 300px;
+    height: 400px;
+  }
+  
+  .priser h3 {
+    margin-top: 20px;
+  }
+
+  .priser p {
+    margin-top: 5px;
+  }
+
+/*Inte grid*/
+@media (max-width: 480px) {
+    .product {
+        width: 100%;
+    }
+}
+
+@media (min-width: 481px) and (max-width: 1024px) {
+    .product {
+        width: 45%;
+    }
+}

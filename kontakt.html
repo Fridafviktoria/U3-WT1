@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kontakta oss</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Hem</a></li>
+        <li><a href="omoss.html">Om oss</a></li>
+        <li><a href="pris.html" >Priser</a></li>
+        <li><a href="kontakt.html">Kontakta oss</a></li>
+        <li><a href="rapport.html">Rapport</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div id="kontakt">
+
+  <form id="booking">
+    <p>
+      För mer information om varje turistmål skickar vi på begäran ut en guide vad som finns att göra på de olika destinationerna, även en offert för en guidad tur. Ange följande nedanför om detta önskas.
+    </p>
+    <fieldset class="bokning">
+
+      <legend>Destination</legend>
+      <label>
+        <input type="radio" name="destination" value="1"> Stockholm
+      </label>
+      <label>
+        <input type="radio" name="destination" value="2"> Göteborg
+      </label>
+      <label>
+        <input type="radio" name="destination" value="3"> Malmö
+      </label>
+
+    </fieldset>
+
+    <fieldset class="bokning">
+      <legend>Datum för resmål</legend>
+      <label> Datum
+        <input type="date" name="datum" required>
+      </label>
+      <label>
+        vuxna:
+        <select name="antalvuxna">
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+        </select>
+      </label>
+      <label>
+        Barn (upp till 15 år):
+        <select name="antalbarn">
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+        </select>
+      </label>
+
+
+    </fieldset>
+
+    <fieldset class="bokning">
+      <legend>Kundinformation</legend>
+      Namn <input type="text">
+      Mobilnummer <input type="text">
+      E-post <input type="text">
+    </fieldset>
+    <fieldset id="greeting">
+      <legend>Textarea</legend>
+      Information för oss om ex specialkost.
+      <br>
+      <textarea rows="4">Text</textarea>
+    </fieldset>
+
+    <p>Offert och turistresmål skickas på din angivna mailadress</p>
+    <input type="submit" value="Boka" id="boka">
+
+  </form>
+</div>
+</body>
+
+</html>
